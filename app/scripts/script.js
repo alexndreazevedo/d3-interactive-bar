@@ -60,6 +60,9 @@ const build = (data) => {
     .attr('height', (d) => board.height)
     .attr('x', (d, i) => p(i));
 
+  bg.exit()
+    .remove();
+
   const axes = svg.append('g');
 
   axes.append('g')
